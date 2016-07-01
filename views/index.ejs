@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <% if (user) { %>
-      Welcome back, <%= user.email %>
-    <% } else { %>
-      <p>Welcome to <%= title %></p>
-    <% } %>
-  </body>
+<head>
+  <title>Sign up/login</title>
+</head>
+<body>
+  <h1>Sign up/Login</h1>
+  <form method="post" action="/login">
+    <input type="submit" value="Login"/>
+  </form>
+  <form method="post" action="/signup">
+    <input type="submit" value="Sign Up"/>
+  </form>
+</body>
 </html>
