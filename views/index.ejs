@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Sign up/login</title>
-</head>
-<body>
-  <h1>Sign up/Login</h1>
-  <form method="post" action="/login">
-    <input type="submit" value="Login"/>
-  </form>
-  <form method="post" action="/signup">
-    <input type="submit" value="Sign Up"/>
-  </form>
-</body>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form action="/login" method="get" >
+      <input type="submit" value="login">
+    </form>
+    <form method="get" action="/signup">
+      <input type="submit" value="signup">
+    </form>
+  </body>
 </html>

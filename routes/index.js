@@ -5,28 +5,17 @@ var User = require('../models/user');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'DateHub' });
 });
-
-/* GET login page. */
+/* GET login page */
 router.get('/login', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('login');
 });
 
-router.post('/login', function(req, res, next){
-  // redirect to index
-  res.redirect('/')
-  });
-
-/* GET signup page. */
+/* GET signup page */
 router.get('/signup', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('signup');
 });
-
-router.post('/signup', function(req, res, next){
-  // redirect to index
-  res.redirect('/')
-  });
 
 
 module.exports = router;
